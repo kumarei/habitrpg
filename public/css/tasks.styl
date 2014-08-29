@@ -60,6 +60,13 @@ for $stage in $stages
     margin: 0 0 0.5em
     padding: 0
     font-weight: 300
+    
+// Keep the add task form in the layout when hidden for the Todos column
+.task-column.todos
+    .addtask-form.ng-hide
+      display:block!important
+      visibility:hidden
+
 
 // 50% width columns with scrollbars for tablets
 @media (min-width: 768px) and (max-width: 970px) 
